@@ -1,0 +1,32 @@
+# Python virtual environment
+.venv/
+venv/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS files
+.DS_Store
+.env
+*.log
+
+# Keep only necessary data files
+data/*.csv
+data/merged_data.json
+data/world_countries.json
+
+# Keep only processed data in src/data
+src/data/*.csv
+!src/data/merged_data.json
+!src/data/world_countries.json
+
+# Analysis outputs
+analysis/eda/*.csv
+
+# IDE files
+.vscode/
+.idea/
+*.swp 
